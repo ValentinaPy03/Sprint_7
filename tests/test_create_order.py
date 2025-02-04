@@ -1,8 +1,7 @@
 import allure
 import pytest
-
 import helper
-from generators import generate_order_body
+
 
 
 class TestCreateOrder:

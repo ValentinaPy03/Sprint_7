@@ -1,7 +1,5 @@
 import requests
-
 from data import Url
-
 
 class CourierMethods:
     def create_courier(self, body):

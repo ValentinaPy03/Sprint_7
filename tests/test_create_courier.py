@@ -2,7 +2,6 @@ import allure
 from generators import generate_courier_body, generate_courier_body_with_same_login
 from tests.conftest import courier_method
 
-
 class TestCreateCourier:
     @allure.title('Тест успешное создание курьера')
     def test_successful_create_courier(self, generate_courier_data, courier_method):

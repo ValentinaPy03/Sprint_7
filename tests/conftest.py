@@ -1,5 +1,4 @@
 import pytest
-
 from generators import generate_courier_body, generate_courier_body_without_login
 from methods.courier_methods import CourierMethods
 from methods.order_methods import OrderMethods

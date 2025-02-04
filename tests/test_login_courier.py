@@ -1,5 +1,3 @@
-from http.client import responses
-
 import allure
 from generators import generate_incorrect_password, generate_incorrect_login
 from tests.conftest import courier_method
