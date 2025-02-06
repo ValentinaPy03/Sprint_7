@@ -4,6 +4,7 @@ class Url:
     LOGIN_COURIER_URL = '/api/v1/courier/login'
     CREATE_ORDER_URL = '/api/v1/orders'
     LIST_ORDERS_URL = '/api/v1/orders'
+    CANCEL_ORDER = '/api/v1/orders/cancel'
 
 class DataForCreateCourier:
     CREATE_COURIER_BODY = {
@@ -26,3 +27,10 @@ class DataForCreateOrder:
             "BLACK"
         ]
     }
+
+class AnswerText:
+    TEXT_POST_CREATE_COURIER = {'ok': True}
+    TEXT_BUG_409_CREATE_COURIER = 'Этот логин уже используется. Попробуйте другой.'
+    TEXT_BUG_400_CREATE_COURIER = "Недостаточно данных для создания учетной записи"
+    TEXT_BUG_404_LOG_COURIER = "Учетная запись не найдена"
+    TEXT_BUG_400_LOG_COURIER = "Недостаточно данных для входа"

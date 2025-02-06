@@ -22,11 +22,6 @@ def generate_courier_data():
     courier_id = CourierMethods().courier_id_by_password_and_login(login, password)
     CourierMethods().delete_courier(courier_id)
 
-@pytest.fixture()
-def generate_courier():
-    courier_body = generate_courier_body()
-    courier_response = CourierMethods.create_courier(courier_body)
-    yield courier_response.json()
 
 @pytest.fixture()
 def generate_courier_data_without_required_field():
